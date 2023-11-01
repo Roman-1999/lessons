@@ -129,19 +129,19 @@
   top: -2px;
   width: 16px;
   height: 22px;
-  background: url("/img/header/contacts/street.svg") center center/contain no-repeat;
+  background: url("../img/header/contacts/street.svg") center center/contain no-repeat;
 }
 .contact-header__link--email::before {
   top: 0;
   width: 20px;
   height: 16px;
-  background: url("/img/header/contacts/email.svg") center center/contain no-repeat;
+  background: url("../img/header/contacts/email.svg") center center/contain no-repeat;
 }
 .contact-header__link--time::before {
   top: 2px;
   width: 15px;
   height: 15px;
-  background: url("/img/header/contacts/time.svg") center center/contain no-repeat;
+  background: url("../img/header/contacts/time.svg") center center/contain no-repeat;
 }
 .top-header__other-info {
   position: absolute;
