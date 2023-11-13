@@ -1,0 +1,702 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:500&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+
+@font-face {
+  font-family: Causten;
+  font-display: swap;
+  src:
+    url("../fonts/Causten-Bold.woff2") format("woff2"),
+    url("../fonts/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Causten;
+  font-display: swap;
+  src:
+    url("../fonts/Causten-Light.woff2") format("woff2"),
+    url("../fonts/Causten-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Causten;
+  font-display: swap;
+  src:
+    url("../fonts/Causten-Medium.woff2") format("woff2"),
+    url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Causten;
+  font-display: swap;
+  src:
+    url("../fonts/Causten-Regular.woff2") format("woff2"),
+    url("../fonts/Causten-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Causten;
+  font-display: swap;
+  src:
+    url("../fonts/Causten-Semi-Bold.woff2") format("woff2"),
+    url("../fonts/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CoreSansC;
+  font-display: swap;
+  src:
+    url("../fonts/CoreSansC-65Bold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CoreSansC;
+  font-display: swap;
+  src:
+    url("../fonts/CoreSansC-45Regular.woff2") format("woff2"),
+    url("../fonts/CoreSansC-45Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CoreSansC;
+  font-display: swap;
+  src:
+    url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CoreSansC;
+  font-display: swap;
+  src:
+    url("../fonts/CoreSansC-85Heavy.woff2") format("woff2"),
+    url("../fonts/CoreSansC-85Heavy.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CoreSansC;
+  font-display: swap;
+  src:
+    url("../fonts/CoreSansC-55Medium.woff2") format("woff2"),
+    url("../fonts/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ОБНУЛЕННЯ */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #3c4242;
+  line-height: 1;
+  font-family: "Causten";
+  font-size: 1.375rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Causten";
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* КІНЕЦЬ ОБНУЛЕННЯ */
+
+/* НАЛАШТУВАННЯ КОНТЕЙНЕРА */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@supports (overflow: clip) {
+  .wrapper {
+    overflow: clip;
+  }
+}
+
+.wrapper > main {
+  flex: 1 1 auto;
+}
+
+.wrapper > * {
+  min-width: 0;
+}
+
+[class*="__container"] {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* КІНЕЦЬ НАЛАШТУВАННЯ КОНТЕЙНЕРА */
+
+body {
+  font-family: "Causten";
+  font-size: 18px;
+}
+
+/* BEM БЛОКИ */
+.section-title {
+  color: #3c4242;
+  font-family: "Core Sans C";
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.68px;
+}
+.section-title--big {
+  font-size: 34px;
+}
+.section-title--small {
+  font-size: 28px;
+}
+.section-title--decor {
+  position: relative;
+}
+.section-title--decor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0.375rem;
+  border-radius: 0.625rem;
+  background-color: #8a33fd;
+}
+
+.section-title--retreat {
+  padding-left: 1.25rem;
+}
+/* КІНЕЦЬ BEM блоків */
+
+/* HEADER */
+.header__container {
+  padding: 32px 0 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__actions {
+  padding-left: 165px;
+  padding-right: 68px;
+}
+.actions-header {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 100%;
+}
+.actions-header__search {
+  padding: 12px 48px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  color: #807d7e;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.search-header__btn {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  transition: fill 0.3s ease-in-out 0s;
+}
+.search-header__btn:hover svg path {
+  fill: #8a33fd;
+}
+.lang-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+.lang-header__value {
+  color: #333;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.lang-header__list {
+  background-color: rgb(215, 207, 207);
+  padding: 16px;
+  color: #8a33fd;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition:
+    visibility 0s,
+    opacity 0.3s ease;
+}
+.lang-header__value:hover + .lang-header__list,
+.lang-header__list:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.lang-header__item:hover {
+  color: #fff;
+}
+.lang-header__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.header__btn {
+  display: flex;
+  gap: 30px;
+}
+
+/* СЕКЦІЯ MAIN */
+.main-cards__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-cards__title:not(:last-child) {
+  margin-bottom: 70px;
+}
+.main-cards__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 33px;
+}
+.item-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  position: relative;
+  width: 100%;
+}
+.item-cards__image {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 145.9259259259%;
+  position: relative;
+}
+.item-cards__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out 0s;
+}
+.item-cards__image:not(:last-child) {
+  margin-bottom: 16px;
+}
+.item-cards__image:hover img {
+  transform: scale(1.05);
+}
+.item-cards__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.item-cards__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.item-cards__title {
+  color: #2a2f2f;
+  font-weight: 700;
+  letter-spacing: -0.715px;
+  transition: color 0.3s ease-in-out 0s;
+}
+.item-cards__title:hover {
+  color: #8a33fd;
+}
+.item-cards__subtitle {
+  color: #7f7f7f;
+  font-size: 13;
+  font-weight: 500;
+  letter-spacing: -0.536px;
+}
+.item-cards__link {
+  transition: fill 0.3s ease-in-out 0s;
+}
+.item-cards__link:hover svg path {
+  fill: #8a33fd;
+}
+/* КІНЕЦЬ MAIN */
+
+/* СЕКЦІЯ WISH */
+.main-wish {
+}
+.main-wish__container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.main-wish__title:not(:last-child) {
+  margin-bottom: 50px;
+}
+.main-wish__list {
+}
+.list-wish {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.list-wish__item {
+  display: flex;
+  align-items: center;
+  column-gap: 36px;
+  max-height: 110px;
+  position: relative;
+}
+.list-wish__delete:hover svg path {
+  stroke: #8a33fd;
+}
+.list-wish__img {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  max-width: 110px;
+  width: 100%;
+  aspect-ratio: 4/4;
+}
+.list-wish__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out 0s;
+}
+.list-wish__img:hover img {
+  transform: scale(1.05);
+}
+.list-wish__info {
+  flex: 1 1 100%;
+}
+.info-wish {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.info-wish__name,
+.info-wish__color,
+.info-wish__count,
+.list-wish__price {
+  color: #3c4242;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.44px;
+}
+.info-wish__name span,
+.info-wish__color span,
+.info-wish__count span {
+  color: #807d7e;
+  font-weight: 500;
+}
+.info-wish__name {
+  transition: color 0.3s ease-in-out 0s;
+}
+.info-wish__name:hover {
+  color: #8a33fd;
+}
+.list-wish__actions {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+.list-wish__price {
+  color: #807d7e;
+}
+/* КІНЕЦЬ WISH */
+
+/* СЕКЦІЯ ORDERS */
+.main-order {
+}
+.main-order__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.main-order__title:not(:last-child) {
+  margin-bottom: 40px;
+}
+.main-order__list {
+}
+.list-orders {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.list-orders__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.invoice-order {
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  padding: 28px 47px;
+}
+.invoice-order__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.invoice-order__title {
+  color: #3c4242;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.invoice-order__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.invoice-order__items {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.invoice-order__item {
+  color: #807d7e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.invoice-order__item span {
+  color: #bebcbd;
+  font-weight: 400;
+}
+.list-orders__product {
+}
+.product-orders {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.product-orders__img {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  max-width: 96px;
+  width: 100%;
+  aspect-ratio: 4/4;
+}
+.product-orders__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out 0s;
+}
+.product-orders__img:hover img {
+  transform: scale(1.05);
+}
+.product-orders__info {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.product-orders__title {
+  color: #3c4242;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: color 0.3s ease-in-out 0s;
+}
+.product-orders__title:hover {
+  color: #8a33fd;
+}
+.product-orders__color,
+.product-orders__count,
+.product-orders__price {
+  color: #3c4242;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.product-orders__color span,
+.product-orders__count span,
+.product-orders__price span {
+  color: #bebcbd;
+  font-weight: 600;
+}
+.product-orders__btn {
+  display: flex;
+  column-gap: 10px;
+}
+/* КІНЕЦЬ ORDERS */
+
+/* КНОПКИ */
+.button {
+  padding: 12px 46px;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition:
+    background-color 0.3s ease-in-out 0s,
+    color 0.3s ease-in-out 0s,
+    border-color 0.3s ease-in-out 0s;
+}
+.button--bg {
+  background-color: #8a33fd;
+}
+.button--bg:hover {
+  background-color: #3c4242;
+}
+.button--white {
+  color: #fff;
+}
+.button--purple {
+  color: #8a33fd;
+}
+.button--border {
+  border: 1px solid #3c4242;
+}
+.button--border:hover {
+  background-color: #8a33fd;
+  color: #fff;
+  border-color: #8a33fd;
+}
+/* КІНЕЦЬ КНОПОК */
+
+/* АНІМАЦІЯ */
+.item-cards {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+.item-cards.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@keyframes customAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.list-wish__item {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: customAnimation 0.7s ease-out;
+}
+.list-wish__item.animate {
+  animation: customAnimation 0.7s ease-out forwards;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.list-orders__item {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+.list-orders__item.animate-order {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* КІНЕЦЬ АНІМАЦІЇ */
