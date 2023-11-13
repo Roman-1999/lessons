@@ -399,14 +399,12 @@ body {
 /* КІНЕЦЬ MAIN */
 
 /* СЕКЦІЯ WISH */
-.cards-main__container {
+.wish-main__container {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-.cards-main__title:not(:last-child) {
-  margin-bottom: 50px;
-}
-.cards-main__list {
+.wish-main__title:not(:last-child) {
+  margin-bottom: 60px;
 }
 .list-wish {
   display: flex;
