@@ -322,14 +322,14 @@ body {
 }
 
 /* СЕКЦІЯ MAIN */
-.main-cards__container {
+.cards-main__container {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.main-cards__title:not(:last-child) {
+.cards-main__title:not(:last-child) {
   margin-bottom: 70px;
 }
-.main-cards__items {
+.cards-main__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -399,16 +399,14 @@ body {
 /* КІНЕЦЬ MAIN */
 
 /* СЕКЦІЯ WISH */
-.main-wish {
-}
-.main-wish__container {
+.cards-main__container {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-.main-wish__title:not(:last-child) {
+.cards-main__title:not(:last-child) {
   margin-bottom: 50px;
 }
-.main-wish__list {
+.cards-main__list {
 }
 .list-wish {
   display: flex;
@@ -488,16 +486,14 @@ body {
 /* КІНЕЦЬ WISH */
 
 /* СЕКЦІЯ ORDERS */
-.main-order {
-}
-.main-order__container {
+.order-main__container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.main-order__title:not(:last-child) {
+.order-main__title:not(:last-child) {
   margin-bottom: 40px;
 }
-.main-order__list {
+.order-main__list {
 }
 .list-orders {
   display: flex;
@@ -656,7 +652,6 @@ body {
   transform: translateY(0);
 }
 
-
 @keyframes customAnimation {
   0% {
     opacity: 0;
@@ -679,7 +674,6 @@ body {
 .list-wish__item.animate {
   animation: customAnimation 0.7s ease-out forwards;
 }
-
 
 @keyframes fadeInUp {
   from {
