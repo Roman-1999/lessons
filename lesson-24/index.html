@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Lesson 24</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header"></header>
+    <main class="page">
+      <div class="title">Hello, World!</div>
+      <button id="createElement" class="button-create-text">Створити елемент</button>
+      <div class="created-text"></div>
+
+      <div class="page__container">
+        <form id="taskForm">
+          <label for="taskInput">Введіть завдання:</label>
+          <input type="text" id="taskInput" required>
+          <button type="submit">Додати</button>
+        </form>
+        <ul id="taskList"></ul>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+  <!-- Підключення JS-файлу з кодом -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
